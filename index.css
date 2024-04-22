@@ -1,0 +1,73 @@
+body{
+    background-image: url("https://c4.wallpaperflare.com/wallpaper/479/101/113/germany-saxony-gorlitz-hall-historical-literature-wallpaper-preview.jpg");
+    background-size: cover;
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.block {
+    background-image: url("https://images.ctfassets.net/o78em1y1w4i4/LHN0F94cNFCx1drEcfcsY/984e632abf38018f2a6ab22c4b61fdc6/teaser-book-with-heart-pages.jpg?fm=webp&w=1160&q=75");
+    background-size: cover;
+    width: 250px;
+    height: 250px;
+    background-color: #f8f8f8;
+    border: 2px solid #dddddd;
+    border-radius: 10px;
+    padding: 20px;
+    box-sizing: border-box;
+    text-align: center;
+    text-decoration: none; /* Pour enlever le soulignement des liens */
+    color: #333333;
+    transition: transform 0.2s ease;
+}
+
+.block:hover {
+    transform: translateY(-5px); /* Animation de légère élévation au survol */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+}
+
+.block h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+    color: black;
+}
+
+.block p {
+    color: black;
+    font-size: 18px;
+    line-height: 1.5;
+}
+
+/* Style spécifique pour les blocs-notes */
+.block:before {
+    content: " ";
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    width: 20px;
+    height: 20px;
+    border-top: 2px solid #333333;
+    border-right: 2px solid #333333;
+    transform: rotate(45deg);
+}
+
+.block:after {
+    content: "";
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+    width: 70%;
+    height: 2px;
+    background-color: #333333;
+}
